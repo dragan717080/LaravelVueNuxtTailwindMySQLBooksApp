@@ -22,7 +22,7 @@ class TaskRepository
         return Task::all();
     }
 
-    public function update($id, $name, $isCompleted)
+    public function update($id, $title, $description, $isCompleted)
     {
         $task = $this->model->find($id);
     
@@ -30,8 +30,12 @@ class TaskRepository
             return null;
         }
     
-        if ($name !== null) {
-            $task->name = $name;
+        if ($title !== null) {
+            $task->title = $title;
+        }
+
+        if ($description !== null) {
+            $task->description = $description;
         }
     
         if ($isCompleted !== null) {
@@ -43,10 +47,11 @@ class TaskRepository
         return $task;
     }
 
-    public function create($name)
+    public function create($title, $description)
     {
         return $this->model->create([
-            'name' => $name,
+            'title' => $title,
+            'description' => $description,
             'isCompleted' => false,
         ]);
     }

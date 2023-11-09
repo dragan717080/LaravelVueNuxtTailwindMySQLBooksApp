@@ -26,13 +26,15 @@ class TaskController extends BaseController
     public function create(Request $req)
     {
         return ResponseBuilder::getResponse(
-            fn() => $this->taskService->create($req->name) ?: null
+            fn() => $this->taskService->create($req->title, $req->description) ?: null
         );
-    }    
+    }
 
     public function update($id, Request $req) {
         return ResponseBuilder::getResponse(
-            fn() => $this->taskService->update($id, $req->input('name'), $req->input('isCompleted')) ?: null
+            fn() => $this->taskService->update(
+                $id, $req->input('title'), $req->input('description'), $req->input('isCompleted')
+            ) ?: null
         );
     }
 

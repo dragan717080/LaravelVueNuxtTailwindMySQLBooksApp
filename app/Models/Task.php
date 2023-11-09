@@ -10,5 +10,5 @@ class Task extends Model
 {
     use HasFactory, HasUuids;
 
-    protected $fillable = ['name', 'isCompleted'];
+    protected $fillable = ['title', 'description', 'isCompleted'];
 }

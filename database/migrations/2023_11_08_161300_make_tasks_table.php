@@ -12,7 +12,8 @@ return new class extends Migration
             Schema::create('tasks', function (Blueprint $table) {
                 /* Stavio sam uuid umesto auto increment int id-ja */
                 $table->uuid('id')->primary();
-                $table->string('name');
+                $table->string('title');
+                $table->string('description');
                 $table->boolean('isCompleted');
                 $table->timestamps();
             });
