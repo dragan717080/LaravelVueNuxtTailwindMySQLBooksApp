@@ -1,8 +1,8 @@
-<a name="no-link"></a># Books App
+# <a name="no-link"></a>Books App
 
 This project is a book web application built using the Laravel framework for the backend, Vue.js for frontend components, Nuxt.js for server-side rendering, Tailwind CSS for styling, and MySQL as the database.
 
-<a name="no-link"></a>## Technologies Used
+## <a name="no-link"></a>Technologies Used
 
 - **Laravel**
 
