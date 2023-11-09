@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row {
+    @apply flex justify-center items-center;
+}
+
+.row-h {
+    @apply flex justify-center;
+}
+
+.row-v {
+    @apply flex items-center;
+}
+
+.row-end {
+    @apply flex justify-end;
+}
+
+.col-v {
+    @apply flex justify-center flex-col;
+}
+
+.col-h {
+    @apply flex items-center flex-col;
+}
+
+.inline-h {
+    @apply inline-flex justify-center;
+}
+
+.pointer {
+    @apply cursor-pointer;
+}
+
+.bg-main {
+    background-color: #332532;
+}
+
+.u {
+    @apply uppercase;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    @apply font-bold;
+}
+
+.extrabold {
+    @apply font-extrabold;
+}
+
+.error {
+    @apply text-red-600;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
+    width: 10px;
+    height: 80px;
+    border-radius: 26px;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+
+.text-header-gradient {
+    background: rgb(57, 132, 244);
+    background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-blue-gradient,
+.text-gradient {
+    background: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
+}
+
+.text-gradient {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-red-gradient {
+    background: linear-gradient(136.91deg, #f96262 -12.5%, #e22929 107.5%);
+}
+
+.text-red-gradient {
+    background-clip: text;
+    color: transparent;
+    background: linear-gradient(136.91deg, #f96262 -12.5%, #e22929 107.5%);
+}
